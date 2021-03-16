@@ -1,0 +1,182 @@
+section.habilidades {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background: url(../../../assets/img/vector.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.card.card-image {
+    border: none;
+}
+
+.tooltipp {
+    position: relative;
+}
+
+.tooltipp:hover {
+    text-decoration: underline;
+}
+
+.tooltipp:hover .tooltip-box,
+.tooltipp:hover .tooltip-box-css,
+.tooltipp:hover .tooltip-box-js,
+.tooltipp:hover .tooltip-box-angular,
+.tooltipp:hover .tooltip-box-bootstrap,
+.tooltipp:hover .tooltip-box-java,
+.tooltipp:hover .tooltip-box-spring,
+.tooltipp:hover .tooltip-box-mysql {
+    display: inline-block;
+}
+
+.tooltip-box {
+    display: none;
+    position: absolute;
+    background: #F1662A;
+    border: 4px solid #c94005;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.tooltip-box-css {
+    display: none;
+    position: absolute;
+    background: #5690CC;
+    border: 4px solid #0a4483;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.tooltip-box-js {
+    display: none;
+    position: absolute;
+    background: #F5DE19;
+    border: 4px solid #b3a20a;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.tooltip-box-angular {
+    display: none;
+    position: absolute;
+    background: #F05455;
+    border: 4px solid #cc1212;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.tooltip-box-bootstrap {
+    display: none;
+    position: absolute;
+    background: #46264C;
+    border: 4px solid #3f0f47;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tooltip-box-java {
+    display: none;
+    position: absolute;
+    background: #EBEBEB;
+    border: 4px solid#858484;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: rgb(102, 98, 98);
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tooltip-box-spring {
+    display: none;
+    position: absolute;
+    background: #46973A;
+    border: 4px solid #1a5811;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tooltip-box-mysql {
+    display: none;
+    position: absolute;
+    background: #5690CC;
+    border: 4px solid #1a4f88;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1140px !important;
+    }
+    section.habilidades {
+        padding-top: 120px;
+    }
+}

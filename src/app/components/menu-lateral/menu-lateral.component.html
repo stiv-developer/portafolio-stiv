@@ -1,0 +1,60 @@
+<header class="header">
+    <div class="header__container">
+        <a href="#" class="header__logo">SRua</a>
+        <div></div>
+        <div class="header__toggle">
+            <i class='bx bx-menu' id="header-toggle" (click)="showMenu('header-toggle','navbar')"></i>
+        </div>
+    </div>
+</header>
+
+<!--========== NAV ==========-->
+<div class="nav" id="navbar">
+    <nav class="nav__container">
+        <div>
+            <a href="#" class="nav__link nav__logo">
+                <i class='bx bxs-disc nav__icon'></i>
+                <span class="nav__logo-name">SRua</span>
+            </a>
+
+            <div class="nav__list">
+                <div class="nav__items">
+                    <h3 class="nav__subtitle">Menu</h3>
+
+                    <a href="#" class="nav__link" routerLink="/" routerLinkActive="">
+                        <i class='bx bx-home nav__icon'></i>
+                        <span class="nav__name">Inicio</span>
+                    </a>
+
+                    <a href="#" class="nav__link" routerLink="/sobremi" routerLinkActive="active">
+                        <i class='fas fa-user-tie nav__icon'></i>
+                        <span class="nav__name">Sobre mí</span>
+                    </a>
+                    <a href="#" class="nav__link" routerLink="/habilidades" routerLinkActive="active">
+                        <i class='fas fa-tools nav__icon'></i>
+                        <span class="nav__name">Habilidades</span>
+                    </a>
+                    <a href="#" class="nav__link" routerLink="/educacion" routerLinkActive="active">
+                        <i class='fas fa-graduation-cap nav__icon'></i>
+                        <span class="nav__name">Educación</span>
+                    </a>
+                    <a href="#" class="nav__link" routerLink="/portafolio" routerLinkActive="active">
+                        <i class='fas fa-folder-open nav__icon'></i>
+                        <span class="nav__name">Portafolio</span>
+                    </a>
+                    <a href="#" class="nav__link" routerLink="/contacto" routerLinkActive="active">
+                        <i class='fas fa-address-book nav__icon'></i>
+                        <span class="nav__name">Contacto</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--========== CONTENTS ==========-->
+<main>
+    <section>
+        <router-outlet></router-outlet>
+    </section>
+</main>

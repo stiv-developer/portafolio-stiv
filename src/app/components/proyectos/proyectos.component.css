@@ -1,0 +1,63 @@
+.description-div {
+    margin-top: 40px;
+}
+
+.description-div .title {
+    color: #1b263b;
+}
+
+.description-div .description {
+    color: #6888ad;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16.5px;
+}
+
+.description-div .number,
+.description-div .title {
+    font-size: 1.5em;
+}
+
+.icon-html {
+    color: #DD4C25;
+}
+
+.icon-css {
+    color: #1F5FAA;
+}
+
+.fab.fa-github,
+.fas.fa-external-link-alt {
+    color: rgb(53, 52, 52);
+    margin-top: 10px;
+}
+
+.fab.fa-github:hover,
+.fas.fa-external-link-alt:hover {
+    color: black;
+}
+
+.grid-icon {
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-icon span {
+    flex-direction: row;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .description-div .number,
+    .description-div .title {
+        font-size: 2.5em;
+    }
+    .proyectos {
+        padding: 100px;
+        padding-top: 20px;
+    }
+    .fab.fa-github,
+    .fas.fa-external-link-alt {
+        margin-top: 0;
+    }
+}

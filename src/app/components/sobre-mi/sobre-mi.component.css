@@ -1,0 +1,97 @@
+.sobremi {
+    padding-top: 50px;
+}
+
+.imgperu {
+    display: none;
+}
+
+.btn-descargar {
+    color: #0077B6;
+    border-color: #0077B6;
+}
+
+.btn-descargar:hover {
+    color: #fff;
+    background-color: #0077B6;
+}
+
+.aboutbtn {
+    padding: 10px 20px;
+    width: 100%;
+    align-self: flex-end;
+    background: #0077B6;
+    border-radius: 4px;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.aboutbtn:hover {
+    background: #fff;
+    border: 2px solid #0077B6;
+    font-weight: 900;
+}
+
+.aboutbtn a {
+    text-decoration: none !important;
+    color: #fff;
+    font-size: 14px;
+}
+
+.aboutbtn a:hover {
+    color: #0077B6 !important;
+    font-size: 14px;
+}
+
+.aboutheading h1 {
+    font-weight: bold;
+}
+
+.sub-title {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #0077B6;
+    padding-bottom: 40px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 480px) {
+    .sub-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 724px) {}
+
+@media screen and (min-width: 768px) {
+    .imgperu {
+        border: 1px solid red;
+        display: contents;
+    }
+    .imgperu img {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+    .aboutbtn {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutbtn {
+        width: 25%;
+    }
+    .imgperu img {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    .container {
+        max-width: 1140px !important;
+    }
+    .sobremi {
+        padding-top: 120px;
+    }
+}

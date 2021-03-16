@@ -1,0 +1,54 @@
+.grid_contacto .item-contacto {
+    background: #fff;
+    font-weight: 500;
+    border: 3px solid gray;
+    height: 120px;
+    color: #0077B6;
+}
+
+.grid_contacto .item-contacto:hover {
+    border: 3px solid #0077B6;
+    color: #0077B6;
+}
+
+section.contacto {
+    padding-top: 50px;
+    margin-bottom: 160px;
+}
+
+.row .col-6 h4 {
+    font-size: 1em;
+}
+
+.row .col-6 h5 {
+    font-size: 13px;
+}
+
+.title-footer {
+    font-size: 1.5rem;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 480px) {
+    .row .col-6 h4 {
+        font-size: 1.3em;
+    }
+    .row .col-6 h5 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 724px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1140px !important;
+    }
+    section.contacto {
+        padding-top: 100px;
+    }
+}

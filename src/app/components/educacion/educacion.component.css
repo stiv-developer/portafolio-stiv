@@ -1,0 +1,103 @@
+.educacion {
+    padding-top: 50px;
+}
+
+.img-certificado {
+    max-width: 100%;
+    padding: 25px;
+}
+
+.educacion-footer {
+    display: flex;
+}
+
+.educacion-footer .text-titu {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    padding-top: 6px;
+    color: #0077B6;
+}
+
+.educacion-footer .img-comillas {
+    width: 50px;
+    height: 50px;
+}
+
+.educacion-number {
+    /* border: 1px solid red; */
+    color: #595555;
+    font-size: 5rem;
+}
+
+.educacion-title {
+    /* border: 1px solid lawngreen; */
+    font-size: 1rem;
+}
+
+.educacion-subtitle {
+    /* border: 1px solid lightseagreen; */
+    color: #352F2F;
+}
+
+
+/* --PROYECTOS-- */
+
+section .container-fluid {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.description-div {
+    margin-top: 40px;
+}
+
+.description-div .title {
+    color: #1b263b;
+}
+
+.description-div .description {
+    color: #6888ad;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16.5px;
+}
+
+.description-div .number,
+.description-div .title {
+    font-size: 1.5em;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 724px) {
+    .educacion-title {
+        font-size: 1.5rem;
+    }
+    .imgperu img {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+    .educacion-footer .text-titu {
+        font-family: 'Fredoka One', cursive;
+        font-size: 2rem;
+        padding-top: 6px;
+        color: #0077B6;
+    }
+    .educacion-footer .img-comillas {
+        width: 100px;
+        height: 100px;
+    }
+    .educacion {
+        padding-top: 100px;
+    }
+    /**/
+    .container {
+        max-width: 1140px !important;
+    }
+}
