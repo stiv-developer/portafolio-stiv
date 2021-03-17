@@ -1,5 +1,12 @@
+.sub-title-e {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #0077B6;
+    margin: 0px;
+}
+
 .educacion {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .img-certificado {

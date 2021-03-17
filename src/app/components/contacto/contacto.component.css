@@ -1,3 +1,10 @@
+.sub-title-c {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #0077B6;
+    margin: 0px;
+}
+
 .grid_contacto .item-contacto {
     background: #fff;
     font-weight: 500;
@@ -12,7 +19,7 @@
 }
 
 section.contacto {
-    padding-top: 50px;
+    padding-top: 20px;
     margin-bottom: 160px;
 }
 

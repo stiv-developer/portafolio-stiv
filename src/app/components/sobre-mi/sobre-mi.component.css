@@ -1,51 +1,5 @@
-.sobremi {
+/* .sobremi {
     padding-top: 50px;
-}
-
-.imgperu {
-    display: none;
-}
-
-.btn-descargar {
-    color: #0077B6;
-    border-color: #0077B6;
-}
-
-.btn-descargar:hover {
-    color: #fff;
-    background-color: #0077B6;
-}
-
-.aboutbtn {
-    padding: 10px 20px;
-    width: 100%;
-    align-self: flex-end;
-    background: #0077B6;
-    border-radius: 4px;
-    margin-top: 10%;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.aboutbtn:hover {
-    background: #fff;
-    border: 2px solid #0077B6;
-    font-weight: 900;
-}
-
-.aboutbtn a {
-    text-decoration: none !important;
-    color: #fff;
-    font-size: 14px;
-}
-
-.aboutbtn a:hover {
-    color: #0077B6 !important;
-    font-size: 14px;
-}
-
-.aboutheading h1 {
-    font-weight: bold;
 }
 
 .sub-title {
@@ -53,45 +7,144 @@
     font-weight: 800;
     color: #0077B6;
     padding-bottom: 40px;
+} */
+
+.wrapper {
+    /* border: 1px solid red;
+    padding: 0px 20px;
+    background: #fff; */
 }
+
+.card_1 {
+    padding: 35px 20px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.titulo-commet {
+    font-weight: bold;
+    font-size: 28px;
+    color: #2a3b47;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.bot {
+    width: 100%;
+    display: flex;
+}
+
+.group-name {
+    padding-left: 10px;
+}
+
+.group-name .nombre {
+    color: #a0a7ac;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.group-name .correo {
+    color: #bdbdbd;
+}
+
+.img-peru {
+    width: 25px;
+}
+
+.bot-main p {
+    color: #697477;
+    font-size: 0.9rem;
+}
+
+.bot-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-footer {
+    border: 0px;
+    color: #a0a7ac;
+    padding: 3px 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #fff;
+}
+
+.icon-footer:hover {
+    background: #e5ebeb;
+}
+
+.button-dowload {
+    color: #838586;
+    border: 1px solid #a0a7ac;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button-dowload:hover {
+    color: #fff;
+    background: #22303a;
+}
+
+.icon-footer .commet {}
 
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 480px) {
-    .sub-title {
-        font-size: 2rem;
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 724px) {
+    .wrapper {
+        padding: 0px 20px;
     }
 }
 
-@media screen and (min-width: 724px) {}
-
 @media screen and (min-width: 768px) {
-    .imgperu {
-        border: 1px solid red;
-        display: contents;
-    }
-    .imgperu img {
-        margin-top: 40px;
-        max-width: 100%;
-    }
-    .aboutbtn {
-        width: 50%;
+    .wrapper {
+        padding-left: 100px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .aboutbtn {
-        width: 25%;
+    .wrapper {
+        max-width: 1340px;
+        margin: auto;
     }
-    .imgperu img {
-        margin-top: 20px;
-        max-width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .titulo-commet {
+        font-size: 40px;
     }
-    .container {
-        max-width: 1140px !important;
+    .foto-perfil {
+        width: 80px;
+        height: 80px;
     }
-    .sobremi {
-        padding-top: 120px;
+    .group-name .nombre {
+        font-size: 27px;
+    }
+    .group-name .correo {
+        font-size: 23px;
+    }
+    .img-peru {
+        width: 30px;
+    }
+    .bot-main p {
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+    .icon-footer {
+        font-size: 1.2rem;
+    }
+    .button-dowload {
+        font-size: 1.2rem;
     }
 }

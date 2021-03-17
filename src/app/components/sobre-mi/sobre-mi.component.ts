@@ -10,6 +10,21 @@ export class SobreMiComponent {
 
   constructor(public dowloadPdf:PdfService) { }
 
+  contadorLike:number = 0;
+  contadorDeslike:number = 0;
+
+  
+
+  clickLike(){
+    this.contadorLike=+1;
+    this.contadorDeslike=0;
+  }
+
+  clickDeslike(){
+    this.contadorLike=0;
+    this.contadorDeslike=+1;
+  }
+
   
 
 }
