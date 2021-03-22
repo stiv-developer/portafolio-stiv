@@ -1,3 +1,8 @@
+section.contacto {
+    padding-top: 75px;
+    margin-bottom: 160px;
+}
+
 .sub-title-c {
     font-size: 1.7rem;
     font-weight: 800;
@@ -16,11 +21,6 @@
 .grid_contacto .item-contacto:hover {
     border: 3px solid #0077B6;
     color: #0077B6;
-}
-
-section.contacto {
-    padding-top: 20px;
-    margin-bottom: 160px;
 }
 
 .row .col-6 h4 {

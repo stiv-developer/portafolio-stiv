@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu-lateral',
   templateUrl: './menu-lateral.component.html',
   styleUrls: ['./menu-lateral.component.scss']
 })
-export class MenuLateralComponent  {
+export class MenuLateralComponent  implements OnInit{
+  
 
      /*==================== SHOW NAVBAR ====================*/
   showMenu (headerToggle:any, navbarId:any)  {
@@ -18,5 +19,33 @@ export class MenuLateralComponent  {
     }
   }
 
+  ngOnInit() {
+    
+  }
+
+  nav: any;
+   MenuToggle(){
+
+    this.showMenu('header-toggle','navbar');
+
+     this.nav = document.getElementById('pague');
+     this.nav.classList.toggle('active');
+     console.log(this.nav);
+ 
+     this.nav = document.getElementById('sobremi');
+     this.nav.classList.toggle('active');
+ 
+    this.nav = document.getElementById('habilidades');
+     this.nav.classList.toggle('active');
+ 
+    this.nav = document.getElementById('educacion');
+     this.nav.classList.toggle('active');
+ 
+    this.nav = document.getElementById('proyectos');
+     this.nav.classList.toggle('active');
+ 
+    this.nav = document.getElementById('contacto');
+     this.nav.classList.toggle('active');
+   }
 
 }

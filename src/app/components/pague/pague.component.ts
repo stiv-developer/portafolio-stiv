@@ -16,4 +16,5 @@ export class PagueComponent  {
         smartBackspace: true // Default value
     });
   }
+
 }

@@ -1,3 +1,7 @@
+.proyectos {
+    padding-top: 75px;
+}
+
 .description-div {
     margin-top: 40px;
 }
@@ -47,17 +51,31 @@
     font-weight: bold;
 }
 
+@media screen and (min-width: 990px) {
+    .container-fluid {
+        padding-left: 90px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .description-div .number,
     .description-div .title {
         font-size: 2.5em;
     }
     .proyectos {
-        padding: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
         padding-top: 20px;
+        padding-bottom: 0px;
     }
     .fab.fa-github,
     .fas.fa-external-link-alt {
         margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .proyectos {
+        padding-top: 100px;
     }
 }

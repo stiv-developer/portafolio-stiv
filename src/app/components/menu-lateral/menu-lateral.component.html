@@ -21,28 +21,28 @@
                 <div class="nav__items">
                     <h3 class="nav__subtitle">Menu</h3>
 
-                    <a href="#" class="nav__link" routerLink="/" routerLinkActive="">
+                    <a href="#pague" (click)="MenuToggle()" class="nav__link">
                         <i class='bx bx-home nav__icon'></i>
                         <span class="nav__name">Inicio</span>
                     </a>
 
-                    <a href="#" class="nav__link" routerLink="/sobremi" routerLinkActive="active">
+                    <a href="#sobremi" (click)="MenuToggle()" class="nav__link">
                         <i class='fas fa-user-tie nav__icon'></i>
                         <span class="nav__name">Sobre mí</span>
                     </a>
-                    <a href="#" class="nav__link" routerLink="/habilidades" routerLinkActive="active">
+                    <a href="#habilidades" (click)="MenuToggle()" class="nav__link">
                         <i class='fas fa-tools nav__icon'></i>
                         <span class="nav__name">Habilidades</span>
                     </a>
-                    <a href="#" class="nav__link" routerLink="/educacion" routerLinkActive="active">
+                    <a href="#educacion" (click)="MenuToggle()" class="nav__link">
                         <i class='fas fa-graduation-cap nav__icon'></i>
                         <span class="nav__name">Educación</span>
                     </a>
-                    <a href="#" class="nav__link" routerLink="/portafolio" routerLinkActive="active">
+                    <a href="#proyectos" (click)="MenuToggle()" class="nav__link">
                         <i class='fas fa-folder-open nav__icon'></i>
                         <span class="nav__name">Portafolio</span>
                     </a>
-                    <a href="#" class="nav__link" routerLink="/contacto" routerLinkActive="active">
+                    <a href="#contacto" (click)="MenuToggle()" class="nav__link">
                         <i class='fas fa-address-book nav__icon'></i>
                         <span class="nav__name">Contacto</span>
                     </a>
@@ -55,6 +55,13 @@
 <!--========== CONTENTS ==========-->
 <main>
     <section>
-        <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
+        <app-pague id="pague" class="pague"></app-pague>
+        <app-sobre-mi id="sobremi" class="sobremi"></app-sobre-mi>
+        <app-habilidades id="habilidades" class="habilidades"></app-habilidades>
+        <app-educacion id="educacion"></app-educacion>
+        <app-proyectos id="proyectos"></app-proyectos>
+        <app-contacto id="contacto"></app-contacto>
+        <app-footer></app-footer>
     </section>
 </main>

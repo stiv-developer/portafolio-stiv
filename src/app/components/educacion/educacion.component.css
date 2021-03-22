@@ -6,7 +6,7 @@
 }
 
 .educacion {
-    padding-top: 30px;
+    padding-top: 75px;
 }
 
 .img-certificado {
@@ -31,18 +31,16 @@
 }
 
 .educacion-number {
-    /* border: 1px solid red; */
     color: #595555;
     font-size: 5rem;
 }
 
 .educacion-title {
-    /* border: 1px solid lawngreen; */
+    color: #2a3b47;
     font-size: 1rem;
 }
 
 .educacion-subtitle {
-    /* border: 1px solid lightseagreen; */
     color: #352F2F;
 }
 
@@ -106,5 +104,17 @@ section .container-fluid {
     /**/
     .container {
         max-width: 1140px !important;
+    }
+}
+
+@media screen and (min-width: 1198px) {
+    .container {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        padding-left: 0;
     }
 }

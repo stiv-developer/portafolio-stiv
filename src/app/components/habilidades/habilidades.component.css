@@ -1,6 +1,7 @@
 section.habilidades {
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 75px;
+    /* padding-bottom: 80px; */
+    padding-bottom: 0;
     background: url(../../../assets/img/vector.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,5 +187,20 @@ section.habilidades {
     }
     section.habilidades {
         padding-top: 120px;
+    }
+    .container {
+        padding-left: 90px;
+    }
+}
+
+@media screen and (min-width: 1198px) {
+    section.habilidades {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        padding-left: 0;
     }
 }

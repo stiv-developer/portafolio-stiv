@@ -13,7 +13,9 @@ export class SobreMiComponent {
   contadorLike:number = 0;
   contadorDeslike:number = 0;
 
-  
+  str:string []=["estvrak31","@","gmail.com"];
+
+  correo=this.str.join("");
 
   clickLike(){
     this.contadorLike=+1;
