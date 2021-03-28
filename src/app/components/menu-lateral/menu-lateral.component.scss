@@ -95,7 +95,6 @@
     }
     &__items {
         row-gap: 1.5rem;
-        // border: 1px solid blue;
     }
     &__subtitle {
         font-size: .938rem;
@@ -104,8 +103,6 @@
         color: #A5A1AA;
     }
     &__link {
-        // border: 1px solid blue;
-        // display: flex;
         display: grid;
         grid-template-columns: 25% 75%;
         align-items: center;
@@ -115,12 +112,10 @@
         }
     }
     &__icon {
-        // border: 1px solid red;
         font-size: 1.2rem;
         margin-right: .5rem;
     }
     &__name {
-        // border: 1px solid red;
         font-size: .875rem;
         font-weight: 500;
         white-space: nowrap;

@@ -2,80 +2,123 @@
     padding-top: 75px;
 }
 
-.description-div {
-    margin-top: 40px;
+.grid {
+    display: grid;
+    grid-gap: 10px;
 }
 
-.description-div .title {
-    color: #1b263b;
+.cards {
+    background: #fff;
+    padding: 15px;
+    border-radius: 11px;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+    transition: 1s;
 }
 
-.description-div .description {
-    color: #6888ad;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16.5px;
+.cards:hover {
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.19);
 }
 
-.description-div .number,
-.description-div .title {
-    font-size: 1.5em;
+.cards img {
+    border-radius: 5px;
+    max-width: 550px;
+    width: 100%;
 }
 
-.icon-html {
-    color: #DD4C25;
+.cards .title {
+    margin-bottom: 0px;
+    padding: 10px 0px;
+    font-weight: bold;
+    color: #2a3b47;
+    font-size: 1.2rem;
 }
 
-.icon-css {
-    color: #1F5FAA;
+.cards .description {
+    color: #697477;
+    font-size: .8rem;
 }
 
-.fab.fa-github,
-.fas.fa-external-link-alt {
-    color: rgb(53, 52, 52);
-    margin-top: 10px;
+.cards .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
 }
 
-.fab.fa-github:hover,
-.fas.fa-external-link-alt:hover {
-    color: black;
-}
-
-.grid-icon {
-    align-items: center;
+.cards .project-list li {
+    padding: 7px 0;
+    margin-right: 10px;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.grid-icon span {
-    flex-direction: row;
-    margin-right: 20px;
+.angular {
+    color: #e72d40;
     font-weight: bold;
 }
 
-@media screen and (min-width: 990px) {
-    .container-fluid {
-        padding-left: 90px;
+.html {
+    color: #dd4c25;
+    font-weight: bold;
+}
+
+.css {
+    color: #1f5faa;
+    font-weight: bold;
+}
+
+.java {
+    color: #464242;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+}
+
+.options a {
+    color: rgb(59, 58, 58);
+    padding-right: 10px;
+}
+
+.options a:hover {
+    color: black;
+}
+
+@media screen and (min-width: 480px) {
+    .grid {
+        /* grid-template-columns: 1fr 1fr; */
+        grid-column-gap: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .grid {
+        /* grid-template-columns: 1fr 1fr; */
+    }
+    .wrapper {
+        max-width: 540px;
+        margin: auto;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .description-div .number,
-    .description-div .title {
-        font-size: 2.5em;
+    .wrapper {
+        max-width: 940px;
+        margin: auto;
     }
-    .proyectos {
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-top: 20px;
-        padding-bottom: 0px;
+    .grid {
+        grid-template-columns: 1fr 1fr;
     }
-    .fab.fa-github,
-    .fas.fa-external-link-alt {
-        margin-top: 0;
-    }
-}
-
-@media screen and (min-width: 1024px) {
     .proyectos {
         padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    .wrapper {
+        max-width: 1140px;
+        margin: auto;
     }
 }
