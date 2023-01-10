@@ -1,73 +1,17 @@
 <section id="habilidades" class="habilidades">
     <div class="container">
         <h1 class="text-center sub-title-h">HABILIDADES</h1>
+        <p class="title-cards">Tecnologías con las que trabajo</p>
         <div class="animate__animated animate__fadeIn">
-            <div class="row">
-                <div class="col-6 col-md-3 col-lg-3 col-lx-3 tooltipp">
-                    <div class="card card-image" style="background: #F1662A; border-radius: 20px;">
-                        <div class="card-body">
-                            <img class="image" src="../../../assets/img/Iconos-habilidades/Iconos-FrontEnd/icono_html.svg" alt="html">
-                        </div>
+            <div class="grid">
+                <div class="card-h" *ngFor="let habilididad of habilidades">
+                    <div style="display: flex;">
+                        <img src="{{habilididad.img.img01}}" alt="">
+                        <img src="{{habilididad.img.img02}}" alt="" *ngIf="habilididad.img.img02">
+                        <img src="{{habilididad.img.img03}}" alt="" *ngIf="habilididad.img.img03">
                     </div>
-                    <span class="tooltip-box">HTML</span>
-                </div>
-                <div class="col-6 col-md-3 col-lg-3 col-lx-3 tooltipp">
-                    <div class="card card-image mb-5" style="background: #5690CC; border-radius: 20px;">
-                        <div class="card-body">
-                            <img class="image" src="../../../assets/img/Iconos-habilidades/Iconos-FrontEnd/icono_css.svg" alt="css">
-                        </div>
-                    </div>
-                    <span class="tooltip-box-css">CSS</span>
-                </div>
-                <div class="col-6 col-md-3 col-lg-3 col-lx-3 tooltipp">
-                    <div class="card card-image mb-5" style="background: #FEE86E; border-radius: 20px;">
-                        <div class="card-body">
-                            <img class="image shadow" src="../../../assets/img/Iconos-habilidades/Iconos-FrontEnd/icono_javascript.svg" alt="js" style="background: #F5DE19;">
-                        </div>
-                    </div>
-                    <span class="tooltip-box-js">JavaScript</span>
-                </div>
-                <div class="col-6 col-md-3 col-lg-3 col-lx-3 tooltipp">
-                    <div class="card card-image mb-5" style="background:#F05455; border-radius: 20px;">
-                        <div class="card-body">
-                            <img class="image" src="../../../assets/img/Iconos-habilidades/Iconos-FrontEnd/icono_angular.svg" alt="">
-                        </div>
-                    </div>
-                    <span class="tooltip-box-angular">Angular</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6 col-md-3 col-lg-3 col-lx-3 tooltipp mb-5">
-                    <div class="card card-image mb-4" style="background: #7D3E6A; border-radius: 20px;">
-                        <div class="card-body">
-                            <img class="image" src="../../../assets/img/Iconos-habilidades/Iconos-FrontEnd/bootstrap.svg" alt="bootstrap">
-                        </div>
-                    </div>
-                    <span class="tooltip-box-bootstrap">Bootstrap</span>
-                </div>
-                <div class="col-6 col-md-3 col-lg-3 col-lx-3 tooltipp mb-5">
-                    <div class="card card-image mb-4" style="background: lightgrey; border-radius: 20px;">
-                        <div class="card-body">
-                            <img class="image" src="../../../assets/img/Iconos-habilidades/Iconos_BackEnd/icono_java.png" alt="Java" style="box-shadow:4px 6px 20px #a79e9e ;background: #EBEBEB; border-radius: 6px;">
-                        </div>
-                    </div>
-                    <span class="tooltip-box-java">Java</span>
-                </div>
-                <div class="col-6 col-md-3 col-lg-3 col-lx-3 tooltipp mb-5">
-                    <div class="card card-image mb-4" style="background: #46973A; border-radius: 20px;">
-                        <div class="card-body">
-                            <img class="image" src="../../../assets/img/Iconos-habilidades/Iconos_BackEnd/icons8-spring-logo.svg" alt="spring">
-                        </div>
-                    </div>
-                    <span class="tooltip-box-spring">Spring</span>
-                </div>
-                <div class="col-6 col-md-3 col-lg-3 col-lx-3 tooltipp mb-5">
-                    <div class="card card-image mb-4" style="background: #5690CC; border-radius: 20px;">
-                        <div class="card-body">
-                            <img class="image" src="../../../assets/img/Iconos-habilidades/Iconos_BackEnd/icono_mysql.svg" alt="Java">
-                        </div>
-                    </div>
-                    <span class="tooltip-box-mysql">MySQL</span>
+                    <p class="titulo">{{habilididad.name}}</p>
+                    <p class="description">{{habilididad.description}}</p>
                 </div>
             </div>
         </div>

@@ -10,21 +10,38 @@ export class SobreMiComponent {
 
   constructor(public dowloadPdf:PdfService) { }
 
-  contadorLike:number = 0;
-  contadorDeslike:number = 0;
+  
 
   str:string []=["estvrak31","@","gmail.com"];
-
   correo=this.str.join("");
 
+  contadorLike:number = 15;
+  contadorDeslike:number = 0;
+  total:number = 15;
+  totalDeslike:number = 0;
+  clicleado:boolean = true;
+  clicleadoDeslike:boolean = true;
+
   clickLike(){
-    this.contadorLike=+1;
-    this.contadorDeslike=0;
+    if(this.clicleado==false){
+       this.clicleado=true;
+       this.total=this.contadorLike--;
+    }
+    else if(this.clicleado==true){
+       this.clicleado=false;
+       this.total=this.contadorLike++;
+    }
   }
 
   clickDeslike(){
-    this.contadorLike=0;
-    this.contadorDeslike=+1;
+    if(this.clicleadoDeslike==false){
+      this.clicleadoDeslike=true;
+      this.totalDeslike=this.contadorDeslike--;
+   }
+   else if(this.clicleadoDeslike==true){
+      this.clicleadoDeslike=false;
+      this.totalDeslike=this.contadorDeslike++;
+   }
   }
 
   

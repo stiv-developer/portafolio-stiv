@@ -9,10 +9,14 @@
 
 .cards {
     background: #fff;
-    padding: 15px;
-    border-radius: 11px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.19);
     transition: 1s;
+}
+
+.cards .group {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cards:hover {
@@ -20,9 +24,9 @@
 }
 
 .cards img {
-    border-radius: 5px;
-    max-width: 550px;
+    max-width: 700px;
     width: 100%;
+    height: 200px;
 }
 
 .cards .title {
@@ -34,7 +38,7 @@
 }
 
 .cards .description {
-    color: #697477;
+    color: rgb(153, 153, 153);
     font-size: .8rem;
 }
 
@@ -73,33 +77,91 @@
     font-weight: bold;
 }
 
+.node {
+    color: green;
+    font-weight: bold;
+}
+
+.javascript {
+    color: #d1d415;
+    font-weight: bold;
+}
+
 .options {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .options a {
-    color: rgb(59, 58, 58);
-    padding-right: 10px;
+    width: 100%;
+    background: rgb(36, 41, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border-radius: 10rem;
+    padding: .65rem 3rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    transition: 0.5s;
 }
 
 .options a:hover {
-    color: black;
+    background: rgb(255, 255, 255);
+    color: rgb(36, 41, 46);
+    border: 1px solid rgb(36, 41, 46);
+}
+
+.options i {
+    margin-left: 5px;
+}
+
+.options .button-visit {
+    border: 1px solid rgb(36, 41, 46);
+    color: rgb(36, 41, 46);
+    background: transparent;
+}
+
+.group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.otros {
+    font-weight: bold;
+}
+
+.ver-mas {
+    color: #0077B6;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 480px) {
     .grid {
-        /* grid-template-columns: 1fr 1fr; */
         grid-column-gap: 25px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .grid {
-        /* grid-template-columns: 1fr 1fr; */
-    }
     .wrapper {
         max-width: 540px;
         margin: auto;
+    }
+    .cards .title {
+        font-size: 1.6rem;
+    }
+    .cards .description {
+        font-size: .9rem;
+    }
+    .cards img {
+        height: 230px;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -109,10 +171,20 @@
         margin: auto;
     }
     .grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .elementos.wan {
+        height: 254px;
     }
     .proyectos {
         padding-top: 100px;
+    }
+    .options {
+        flex-direction: row;
+    }
+    .options a {
+        padding: .65rem 0px;
+        margin-left: 3px;
     }
 }
 

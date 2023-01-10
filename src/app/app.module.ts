@@ -11,6 +11,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AllProjectsComponent } from './components/all-projects/all-projects.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
     ProyectosComponent,
     ContactoComponent,
     FooterComponent,
-    MenuLateralComponent
+    MenuLateralComponent,
+    AllProjectsComponent
   ],
   imports: [
     BrowserModule,

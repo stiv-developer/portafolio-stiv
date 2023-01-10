@@ -16,10 +16,10 @@
         <div class="bot-footer">
             <hr>
             <div>
-                <button id="like" class="icon-footer" (click)="clickLike()"><i class="fas fa-thumbs-up"></i> {{contadorLike}}</button>
-                <button id="deslike" class="icon-footer" (click)="clickDeslike()"><i class="fas fa-thumbs-down"></i> {{contadorDeslike}}</button>
-                <button class="icon-footer commet" disabled><i class="fas fa-comments"></i></button>
-                <button class="icon-footer" disabled><i class="fas fa-share"></i></button>
+                <button id="like" class="icon-footer" (click)="clickLike()"><i class="fas fa-thumbs-up"></i> {{total}}</button>
+                <button id="deslike" class="icon-footer" (click)="clickDeslike()"><i class="fas fa-thumbs-down"></i> {{totalDeslike}}</button>
+                <!-- <button class="icon-footer commet" disabled><i class="fas fa-comments"></i></button>
+                <button class="icon-footer" disabled><i class="fas fa-share"></i></button> -->
             </div>
             <button class="button-dowload" (click)="dowloadPdf.dowloadPdf()">Descargar CV</button>
         </div>

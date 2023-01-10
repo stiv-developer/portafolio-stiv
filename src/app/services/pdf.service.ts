@@ -8,7 +8,7 @@ export class PdfService {
 
   dowloadPdf() {
 
-    const ProdPdfURL:string = "./assets/documents/stiv_V6.pdf";
+    const ProdPdfURL:string = "./assets/documents/curriculumV10.pdf";
     const pdfName:string = "curriculum";
     FileSaver.saveAs(ProdPdfURL,pdfName);
   }

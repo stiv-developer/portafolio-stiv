@@ -3,45 +3,31 @@
         <h1 class="text-center sub-title">PROYECTOS</h1>
         <div class="wrapper">
             <div class="grid">
-                <div class="cards">
-                    <img src="../../../assets/img/portafolio.PNG" alt="img-cajero-automatico">
-                    <p class="title">PORTAFOLIO</p>
-                    <p class="description">El portafolio online es un espacio virtual en el que puedes consignar todos los detalles sobre tu formación</p>
-                    <ul class="project-list">
-                        <li class="angular">Angular <i class="fab fa-angular fa-2x"></i></li>
-                        <li class="html">HTML <i class="fab fa-html5 fa-2x"></i></li>
-                        <li class="css">CSS <i class="fab fa-html5 fa-2x"></i></li>
-                    </ul>
-                    <div class="options">
-                        <a href="https://github.com/stiv-developer/portafolio-stiv"><i class="fab fa-github fa-2x"></i></a>
+                <div class="cards" *ngFor="let proyecto of proyectos">
+                    <img src="{{proyecto.img}}" alt="img-cajero-automatico">
+                    <div class="group">
+                        <div class="elementos wan">
+                            <p class="title">{{proyecto.name}}</p>
+                            <p class="description">{{proyecto.description}}</p>
+                            <ul class="project-list">
+                                <li class="{{proyecto.icon.icon01.clase}}">{{proyecto.icon.icon01.name}}<i class="{{proyecto.icon.icon01.fa}}"></i></li>
+                                <li class="{{proyecto.icon.icon02.clase}}">{{proyecto.icon.icon02.name}}<i class="{{proyecto.icon.icon02.fa}}"></i></li>
+                                <li class="{{proyecto.icon.icon03.clase}}">{{proyecto.icon.icon03.name}}<i class="{{proyecto.icon.icon03.fa}}"></i></li>
+                                <li class="{{proyecto.icon.icon04.clase}}">{{proyecto.icon.icon04.name}}<i class="{{proyecto.icon.icon04.fa}}"></i></li>
+                            </ul>
+                        </div>
+                        <div class="options">
+                            <a class="button-github" href="{{proyecto.options.buttonGitHub.href}}">GitHub<i class="fab fa-github fa-2x"></i></a>
+                            <a class="button-visit" href="{{proyecto.options.buttonVisit.href}}" *ngIf="proyecto.options.buttonVisit.href">Visitar<i class="fas fa-external-link-alt fa-2x"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="cards">
-                    <img src="../../../assets/img/CalculadoraProsupuesto.png" alt="img-cajero-automatico">
-                    <p class="title">CALCULADORA DE PRESUPUESTO</p>
-                    <p class="description">Para ordenar sus finanzas, lo primero es realizar un presupuesto mensual para saber con claridad cuáles sus ingresos y gastos reales.</p>
-                    <ul class="project-list">
-                        <li class="angular">Angular <i class="fab fa-angular fa-2x"></i></li>
-                        <li class="html">HTML <i class="fab fa-html5 fa-2x"></i></li>
-                        <li class="css">CSS <i class="fab fa-html5 fa-2x"></i></li>
-                    </ul>
-                    <div class="options">
-                        <a href="https://github.com/stiv-developer/calculadoraProsupuesto"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="https://suspicious-bardeen-23e550.netlify.app/"><i class="fas fa-external-link-alt fa-2x"></i></a>
-                    </div>
-                </div>
-                <div class="cards">
-                    <img src="../../../assets/img/cajeroAutomatico.png" alt="img-cajero-automatico">
-                    <p class="title">MINI CAJERO AUTOMATICO</p>
-                    <p class="description">Un cajero automático está compuesto por subsistemas electrónicos con controladores industriales</p>
-                    <ul class="project-list">
-                        <li class="java">Java <img src="../../../assets/img/java.svg" alt="java" style="width: 35px;"></li>
-                    </ul>
-                    <div class="options">
-                        <a href="https://github.com/stiv-developer/cajero_automatico"><i class="fab fa-github fa-2x"></i></a>
-                    </div>
-                </div>
+
             </div>
+        </div>
+        <div class="group">
+            <p class="otros">Otros proyectos destacables</p>
+            <a class="ver-mas" (click)="VerProyectos()">Ver más proyectos</a>
         </div>
     </div>
 </section>
